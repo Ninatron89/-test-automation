@@ -1,0 +1,5 @@
+.gradle
+.idea
+chromedriver.exe
+/build/
+out
