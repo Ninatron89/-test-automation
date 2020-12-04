@@ -34,7 +34,7 @@ public class GoogleCalcTests {
         calcPage = new CalcPage(driver);
     }
 
-  @Test
+ @Test
     public void test1() throws InterruptedException {
         driver.get("http://google.ru");
         driver.findElement(By.cssSelector("input.gLFyf.gsfi")).sendKeys("Калькулятор", Keys.ENTER);
@@ -57,7 +57,7 @@ public class GoogleCalcTests {
         assertEquals("1", calcPage.response.getText());
     }
 
-   // @Test
+    @Test
     public void test2() throws InterruptedException {
         driver.get("http://google.ru");
         driver.findElement(By.cssSelector("input.gLFyf.gsfi")).sendKeys("Калькулятор", Keys.ENTER);
@@ -71,7 +71,7 @@ public class GoogleCalcTests {
         assertEquals("Infinity", calcPage.response.getText());
     }
 
-   // @Test
+   @Test
     public void test3() throws InterruptedException {
         driver.get("http://google.ru");
         driver.findElement(By.cssSelector("input.gLFyf.gsfi")).sendKeys("Калькулятор", Keys.ENTER);
